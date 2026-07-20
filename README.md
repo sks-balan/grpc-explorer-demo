@@ -20,8 +20,9 @@ What works here:
 What needs a real host: starting/stopping servers, live invocations, and
 fault injection require the control plane (a Node service that spawns actual
 gRPC servers) — browsers cannot speak native gRPC. The full application is a
-single `make dev` from a checkout of the source repository, which will be
-published once it completes review.
+single `make dev` from a checkout of the source repository:
+
+**Source: https://github.com/sks-balan/grpc-explorer**
 
 This repository contains only the built site; it is regenerated from source
 (`scripts/record_demo.ts` + `VITE_DEMO=1 vite build`).
